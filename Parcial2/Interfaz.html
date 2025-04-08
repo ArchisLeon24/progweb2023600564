@@ -1,0 +1,46 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <h1>Teclas</h1>
+    <div class="tecla-container">
+        <div class="tecla">W</div>
+        <div class="tecla">A</div>
+        <div class="tecla">S</div>
+        <div class="tecla">D</div>
+        <div class="tecla">X</div>
+        <div class="tecla">Z</div> 
+    </div>
+
+    <script>
+        document.addEventListener("keydown", function(event) {
+            const tecla = event.key.toLowerCase();
+            switch(tecla) {
+                case 'w':
+                    document.body.style.backgroundColor = "#3498db"; // azul
+                    break;
+                case 'a':
+                    document.body.style.backgroundColor = "#2ecc71"; 
+                    break;
+                case 's':
+                    document.body.style.backgroundColor = "#f1c40f"; 
+                    break;
+                case 'd':
+                    document.body.style.backgroundColor = "#e67e22"; 
+                    break;
+                case 'x':
+                    document.body.style.backgroundColor = "#2e2e2e"; 
+                    break;
+                case 'z':
+                    document.body.style.backgroundColor = "#9b59b6"; 
+                    break;
+                default:
+                    break;
+            }
+        });
+    </script>
+
+</body>
+</html>
